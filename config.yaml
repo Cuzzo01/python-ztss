@@ -1,0 +1,27 @@
+# This should be the name of the person running the script
+current_user: Alice
+
+# Set this value to true if you want to supply your own random numbers
+prompt_user_for_random_numbers: false
+
+# A list representing the order in which people will go.
+# Everyone in the group must have a matching order list.
+order: 
+  - Alice
+  - Bob
+  - Eve
+  - Malory
+  - Trudy
+
+# Set the max sizes of random numbers (either generated or input)
+max_random_number: 10_000
+
+# Chang the directory datafiles are read from and written to
+output_directory: './data'
+
+# Change the path the secrets file is read from and written to
+secrets_path: './data/secrets.yaml'
+
+# Change the pattern used to search for data files
+# Changing this will not change how files are written, it's only used for searching.
+datafile_pattern: 'ZTSS_Stage-{Stage}_User-{UserNum}.yaml'
